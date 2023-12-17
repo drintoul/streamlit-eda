@@ -21,7 +21,7 @@ def main():
 	st.title("Exploratory Data Analysis")
 
 	st.info('Analyze a comma-separated values file to gain insight into unique values in each column, missing values, values distribution (histogram), and more.', icon='ℹ️')
-	st.warning('While this is a web app, it runs in your browser and does not send any information over the internet', icon='ℹ️')
+	st.warning('While this is a web app, it runs in your browser and does not send any information over the internet', icon='⚠️')
 
 	# CSV file upload
 	csv_file = st.file_uploader("Upload a CSV file", type=["csv"])
