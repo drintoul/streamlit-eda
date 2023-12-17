@@ -19,5 +19,10 @@ def main():
       report = sv.analyze(df)
       report.show_html()
 
+      show_html(filepath='SWEETVIZ_REPORT.html', 
+                open_browser=True, 
+                layout='widescreen', 
+                scale=None)
+
 if __name__ == '__main__':
     main()
