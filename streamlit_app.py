@@ -30,7 +30,7 @@ def main():
 
 		df = pd.read_csv(csv_file)
 
-		col1, col2 = st.colums(2)
+		col1, col2 = st.columns(2)
 		
 		col1.write('Five random rows')
 		df = df.sample(frac=1)
