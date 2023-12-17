@@ -20,6 +20,8 @@ def main():
 	st.set_page_config(page_title="Exploratory Data Analysis")
 	st.title("Exploratory Data Analysis")
 
+	st.subheader('Analyze a comma-separated values file to gain insight into missing values and data profile.')
+
 	# CSV file upload
 	csv_file = st.file_uploader("Upload a CSV file", type=["csv"])
 
