@@ -21,7 +21,7 @@ def main():
 	st.title("Exploratory Data Analysis")
 
 	st.info('Analyze a comma-separated values file to gain insight into unique values in each column, missing values, values distribution histograms, and more.', icon='ℹ️')
-	st.warning(f'{<a href="https://docs.streamlit.io/streamlit-community-cloud/get-started/trust-and-security" target="_blank">Steamlit on security</a>}', icon='⚠️')
+	st.warning('See https://docs.streamlit.io/streamlit-community-cloud/get-started/trust-and-security for information on Steamlit on security', icon='⚠️')
 
 	# CSV file upload
 	csv_file = st.file_uploader("Upload a CSV file", type=["csv"])
@@ -33,6 +33,8 @@ def main():
 
 		report = sv.analyze(df)
 		report.show_html()
+
+		st.balloons()
 		st_display_sweetviz("SWEETVIZ_REPORT.html")
 
 if __name__ == '__main__':
