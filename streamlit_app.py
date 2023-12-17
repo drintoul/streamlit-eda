@@ -1,6 +1,7 @@
 import streamlit as st
 #st.set_page_config(layout="wide")
 import pandas as pd
+import sweetviz as sv
 
 def main():
 
@@ -14,6 +15,9 @@ def main():
 
       df = pd.read_csv(csv_file)
       st.dataframe(df.head(), hide_index=True)
+
+      report = sv.analyze(df)
+      report.show_html()
 
 if __name__ == '__main__':
     main()
