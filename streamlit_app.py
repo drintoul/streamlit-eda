@@ -1,7 +1,8 @@
 import streamlit as st
-import streamlit.components.v1 as components
+#import streamlit.components.v1 as components
 #st.set_page_config(layout="wide")
 import pandas as pd
+import codecs
 import sweetviz as sv
 
 def st_display_sweetviz(report_html,width=1000,height=500):
