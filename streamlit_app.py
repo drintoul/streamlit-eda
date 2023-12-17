@@ -4,6 +4,12 @@ import streamlit.components.v1 as components
 import pandas as pd
 import sweetviz as sv
 
+def st_display_sweetviz(report_html,width=1000,height=500):
+	report_file = codecs.open(report_html,'r')
+	page = report_file.read()
+	components.html(page,width=width,height=height,scrolling=True)
+
+
 def main():
 
     st.set_page_config(page_title="Exploratory Data Analysis")
