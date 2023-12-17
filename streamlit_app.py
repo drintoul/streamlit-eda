@@ -18,7 +18,7 @@ def main():
       st.dataframe(df.head(), hide_index=True)
 
       analysis = sv.analyze([df,'EDA'], feat_cfg=sv.FeatureConfig(
-        skip=skip_columns_time_series,
+        #skip=skip_columns_time_series,
         force_text=[]), target_feat=None)
 
       analysis.show_html(filepath='./frontend/public/EDA.html', open_browser=False, layout='vertical', scale=1.0)
