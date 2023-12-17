@@ -6,6 +6,8 @@ import pandas as pd
 import codecs
 import sweetviz as sv
 
+sv.config_parser.read("override.ini")
+
 def st_display_sweetviz(report_html,width=1000,height=500):
 	report_file = codecs.open(report_html,'r')
 	page = report_file.read()
