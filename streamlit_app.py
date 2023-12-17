@@ -38,5 +38,7 @@ def main():
 
 		st_display_sweetviz("SWEETVIZ_REPORT.html")
 
+		st.error('Clicking on Associations doesn\'t yet work', icon="🚨")
+
 if __name__ == '__main__':
 	main()		
