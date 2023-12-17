@@ -16,13 +16,10 @@ def main():
       df = pd.read_csv(csv_file)
       st.dataframe(df.head(), hide_index=True)
 
-      report = sv.analyze(df)
-      report.show_html()
+      analysis = sv.analyze([df, 'EDA'])
 
-      show_html(filepath='SWEETVIZ_REPORT.html', 
-                open_browser=True, 
-                layout='widescreen', 
-                scale=None)
+      analysis.show_html(filepath='./frontend/public/EDA.html', open_browser=False, layout='vertical', scale=1.0)
+      components.iframe(src='http://localhost:3001/EDA.html', width=1100, height=1200, scrolling=True)
 
 if __name__ == '__main__':
     main()
