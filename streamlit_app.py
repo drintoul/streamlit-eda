@@ -20,7 +20,7 @@ def main():
 	st.set_page_config(page_title="Exploratory Data Analysis")
 	st.title("Exploratory Data Analysis")
 
-	st.header('Analyze a comma-separated values file to gain insight into unique values in each column, missing values, values distribution histograms, and more.')
+	st.subheader('Analyze a comma-separated values file to gain insight into unique values in each column, missing values, values distribution histograms, and more.')
 	st.warning('See https://docs.streamlit.io/streamlit-community-cloud/get-started/trust-and-security for information from Steamlit on security', icon='⚠️')
 
 	# CSV file upload
