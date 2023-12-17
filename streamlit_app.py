@@ -18,8 +18,8 @@ def main():
       st.dataframe(df.head(), hide_index=True)
 
       report = sv.analyze(df)
-	  report.show_html()
-	  st_display_sweetviz("SWEETVIZ_REPORT.html")
+      report.show_html()
+      st_display_sweetviz("SWEETVIZ_REPORT.html")
 
 if __name__ == '__main__':
     main()		
