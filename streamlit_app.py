@@ -13,7 +13,7 @@ def main():
     if csv_file:
 
       df = pd.read_csv(csv_file)
-      st.dataframe(csv_file.head())
+      st.dataframe(df.head())
 
 if __name__ == '__main__':
     main()
