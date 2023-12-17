@@ -29,16 +29,16 @@ def main():
 	if csv_file:
 
 		df = pd.read_csv(csv_file)
-		#st.dataframe(df.head(), hide_index=True)
+		st.dataframe(df.head(), hide_index=True)
 
 		report = sv.analyze(df)
 		report.show_html()
 		st.balloons()
 		#st.snow()
+		st.error('Clicking on Associations doesn\'t yet work', icon="🚨")
 
 		st_display_sweetviz("SWEETVIZ_REPORT.html")
 
-		st.error('Clicking on Associations doesn\'t yet work', icon="🚨")
 
 if __name__ == '__main__':
 	main()		
