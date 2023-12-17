@@ -33,8 +33,8 @@ def main():
 
 		report = sv.analyze(df)
 		report.show_html()
-		#st.balloons()
-		st.snow()
+		st.balloons()
+		#st.snow()
 
 		st_display_sweetviz("SWEETVIZ_REPORT.html")
 
