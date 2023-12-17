@@ -21,7 +21,7 @@ def main():
     csv_file = st.file_uploader("Upload a CSV file", type=["csv"])
 
     if csv_file:
-
+	    
       df = pd.read_csv(csv_file)
       #st.dataframe(df.head(), hide_index=True)
 
