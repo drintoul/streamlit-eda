@@ -20,7 +20,7 @@ def main():
 	st.set_page_config(page_title="Exploratory Data Analysis")
 	st.title("Exploratory Data Analysis")
 
-	st.info('Analyze a comma-separated values file to gain insight into unique values in each column, missing values, values distribution (histogram), and more.', icon='ℹ️')
+	st.info('Analyze a comma-separated values file to gain insight into unique values in each column, missing values, values distribution histograms, and more.', icon='ℹ️')
 	st.warning('This web app runs in your browser and does not send any data over the internet.', icon='⚠️')
 
 	# CSV file upload
