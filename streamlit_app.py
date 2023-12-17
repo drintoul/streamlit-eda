@@ -23,7 +23,7 @@ def main():
     if csv_file:
 
       df = pd.read_csv(csv_file)
-      st.dataframe(df.head(), hide_index=True)
+      #st.dataframe(df.head(), hide_index=True)
 
       report = sv.analyze(df)
       report.show_html()
