@@ -30,7 +30,8 @@ def main():
 
 		df = pd.read_csv(csv_file)
 		st.write('Five random rows')
-		st.dataframe(df.sample(frac=1).head(), hide_index=True)
+		df = df.sample(frac=1)
+		st.dataframe(df.head(), hide_index=True)
 
 		report = sv.analyze(df)
 		report.show_html()
