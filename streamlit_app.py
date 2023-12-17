@@ -29,21 +29,18 @@ def main():
 	if csv_file:
 
 		df = pd.read_csv(csv_file)
-
-		col1, col2 = st.columns(2)
 		
-		col1.write('Five random rows')
+		st.write('Five random rows')
 		df = df.sample(frac=1)
-		col2.dataframe(df.head(), hide_index=True)
+		st.dataframe(df.head(), hide_index=True)
 
 		report = sv.analyze(df)
 		report.show_html()
 		st.balloons()
 		#st.snow()
-		col1.error('Clicking on Associations doesn\'t yet work', icon="🚨")
+		st.error('Clicking on Associations doesn\'t yet work', icon="🚨")
 
-		with col2:
-			st_display_sweetviz("SWEETVIZ_REPORT.html")
+		st_display_sweetviz("SWEETVIZ_REPORT.html")
 
 
 if __name__ == '__main__':
