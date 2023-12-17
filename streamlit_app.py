@@ -2,11 +2,6 @@ import streamlit as st
 #st.set_page_config(layout="wide")
 import pandas as pd
 
-def on_text_area_change():
-
-    st.session_state.page_text = st.session_state.my_text_area
-    
-
 def main():
 
     st.set_page_config(page_title="Exploratory Data Analysis")
