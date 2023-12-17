@@ -29,7 +29,8 @@ def main():
 	if csv_file:
 
 		df = pd.read_csv(csv_file)
-		st.dataframe(df.head(), hide_index=True)
+		st.write('Five random rows')
+		st.dataframe(df.sample(frac=1).head(), hide_index=True)
 
 		report = sv.analyze(df)
 		report.show_html()
